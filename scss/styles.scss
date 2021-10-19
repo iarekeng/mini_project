@@ -47,7 +47,7 @@ img {
   max-width: 100%;
 }
 .page__wrapper {
-  padding: 0 250px;
+  padding: 0 50px;
 }
 .medium__text {
   font-size: 18px;
@@ -71,7 +71,7 @@ img {
     background-size: 885px;
     height: 468px;
     background-repeat: no-repeat;
-    background-position-x: 30rem;
+    background-position-x: 40rem;
     background-position-y: 20rem;
   }
   &__info {
@@ -88,10 +88,12 @@ img {
   &-1200 {
     padding: 100px 0;
     max-width: 1200px;
+    margin: 0 auto;
   }
   &-1400 {
     padding: 100px 0;
     max-width: 1400px;
+    margin: 0 auto;
   }
 }
 
@@ -208,7 +210,7 @@ img {
       left:0;
       width: 0; 
       height: 0; 
-      border-top: 285px solid white; 
+      border-top: 475px solid white; 
       border-right: 100px solid transparent;
     }
   }
@@ -359,8 +361,8 @@ img {
   }
   &-8 {
     margin-bottom: 64px
+    }
   }
-}
 
 @media (max-width: 768px) {
   h1 {

@@ -45,7 +45,7 @@ img {
 }
 
 .page__wrapper {
-  padding: 0 250px;
+  padding: 0 50px;
 }
 
 .medium__text {
@@ -74,7 +74,7 @@ img {
   background-size: 885px;
   height: 468px;
   background-repeat: no-repeat;
-  background-position-x: 30rem;
+  background-position-x: 40rem;
   background-position-y: 20rem;
 }
 .section__info {
@@ -92,10 +92,12 @@ img {
 .container-1200 {
   padding: 100px 0;
   max-width: 1200px;
+  margin: 0 auto;
 }
 .container-1400 {
   padding: 100px 0;
   max-width: 1400px;
+  margin: 0 auto;
 }
 
 .button {
@@ -209,7 +211,7 @@ img {
   left: 0;
   width: 0;
   height: 0;
-  border-top: 285px solid white;
+  border-top: 475px solid white;
   border-right: 100px solid transparent;
 }
 .features__link {
