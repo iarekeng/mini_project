@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
    uglify = require('gulp-uglify'),
-   sass = require('gulp-sass'),
    browserSync = require('browser-sync').create();
+var sass = require('gulp-sass')(require('sass'));
 
 gulp.task('js', function () {
     return gulp.src('js/*.js')
@@ -20,10 +20,25 @@ gulp.task('js', function () {
 cb();
  })
 
-gulp.task('sass', function() {
-  gulp.src('./scss/**/*.scss')
+ function style() {
+  return gulp.src('./scss/**/*.scss')
     .pipe(sass())
-    .pipe(gulp.dest('./css'))
+    .pipe(gulp.dest('./dist/css'))
     .pipe(browserSync.stream());
-})
+}
 
+function watch() {
+  browserSync.init({
+    injectChanges: true,
+    server: {
+      baseDir: './dist'
+    }
+  });
+
+  gulp.watch('./scss/**/*.scss', style);
+  gulp.watch('./dist/css/**/*.css').on('change', browserSync.reload)
+  gulp.watch('./dist/*.html').on('change', browserSync.reload);
+}
+
+exports.watch = watch;
+exports.default = style;
