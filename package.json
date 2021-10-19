@@ -16,7 +16,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
-    "start": "start"
+    "start": "node app"
   },
   "author": "",
   "license": "ISC"
