@@ -141,12 +141,19 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 47px 100px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .nav__link {
   padding-right: 40px;
   font-weight: 500;
-  color: #212353;
+  color: #4b5d68;
   text-decoration: none;
+}
+.nav-active {
+  color: #212353;
+  font-weight: 700;
 }
 .nav__menu {
   display: flex;
@@ -211,7 +218,7 @@ img {
   left: 0;
   width: 0;
   height: 0;
-  border-top: 475px solid white;
+  border-top: 475px solid transparent;
   border-right: 100px solid transparent;
 }
 .features__link {

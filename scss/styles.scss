@@ -136,12 +136,19 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 47px 100px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
   &__link {
     padding-right: 40px;
     font-weight: 500;
-    color: $color2;
+    color: $color1;
     text-decoration: none;
+  }
+  &-active {
+    color: $color2;
+    font-weight: 700;
   }
   &__menu {
     display: flex;
@@ -210,7 +217,7 @@ img {
       left:0;
       width: 0; 
       height: 0; 
-      border-top: 475px solid white; 
+      border-top: 475px solid transparent; 
       border-right: 100px solid transparent;
     }
   }
