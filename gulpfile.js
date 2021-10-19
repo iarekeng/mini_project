@@ -12,6 +12,9 @@ gulp.task('js', function () {
        .pipe(gulp.dest('build'));
  });
 
+ gulp.task('build', function(cb) {
+   cb();
+ })
  
  gulp.task('default', function(cb) {
 cb();
