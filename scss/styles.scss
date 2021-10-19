@@ -319,6 +319,9 @@ img {
   &__link {
     margin-bottom: 20px;
   }
+  &__social {
+    display: flex;
+  }
   &__social__icon {
     margin-right: 14px;
   }
@@ -359,7 +362,7 @@ img {
   }
 }
 
-@media screen and (min-device-width: 300px) and (max-device-width: 768px) {
+@media (max-width: 768px) {
   h1 {
     font-size: 60px;
     line-height: 60px;
